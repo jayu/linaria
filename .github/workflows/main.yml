@@ -15,5 +15,7 @@ jobs:
 
       - name: labeler
         uses: jayu/super-labeler-action@develop
+        env:
+          ACTIONS_STEP_DEBUG : ${{ secrets.ACTIONS_STEP_DEBUG }}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
