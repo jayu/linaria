@@ -2,7 +2,7 @@
   "labels": {
     "babel-plugin": {
       "name": "babel-plugin",
-      "description": null,
+      "description": "",
       "colour": "006b75"
     },
     "bug-report": {
@@ -127,7 +127,7 @@
     },
     "greenkeeper": {
       "name": "greenkeeper",
-      "description": null,
+      "description": "",
       "colour": "00c775"
     },
     "hacktoberfest": {
