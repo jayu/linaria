@@ -260,7 +260,7 @@
           "pattern": "/monorepo/i"
         },
         {
-          "type": "contentMatches",
+          "type": "descriptionMatches",
           "pattern": "/monorepo/i"
         }
       ]
