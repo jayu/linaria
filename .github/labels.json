@@ -249,6 +249,11 @@
       "name": "workaround exist",
       "description": "Workaround for the issue exist",
       "colour": "70f488"
+    },
+    "skip-labeling": {
+      "name": "skip autolabeling",
+      "description": "Use it to disable auto laberer bot for an issue/pr",
+      "colour": "D9BBF9"
     }
   },
   "issue": {
@@ -285,5 +290,6 @@
       "needs-triage"
     ]
   },
-  "pr": {}
+  "pr": {},
+  "skip_labeling": "skip-labeling"
 }
