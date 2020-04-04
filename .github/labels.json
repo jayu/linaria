@@ -285,7 +285,7 @@
     }
   },
   "issue_fallback": {
-    "fallbackActivationValue": 1,
+    "fallbackActivationValue": 2,
     "labels": [
       "needs-triage"
     ]
