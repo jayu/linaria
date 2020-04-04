@@ -264,9 +264,26 @@
           "pattern": "/monorepo/i"
         }
       ]
+    },
+    "bundler-rollup": {
+      "requires": 1,
+      "conditions": [
+        {
+          "type": "titleMatches",
+          "pattern": "/rollup/i"
+        },
+        {
+          "type": "descriptionMatches",
+          "pattern": "/rollup/i"
+        }
+      ]
     }
   },
-  "pr": {
-    
-  }
+  "issue_fallback": {
+    "fallbackActivatesBelowCount": 2,
+    "labels": [
+      "needs-triage"
+    ]
+  },
+  "pr": {}
 }
