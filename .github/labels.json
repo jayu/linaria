@@ -25,11 +25,6 @@
       "description": "Issue is related to rollup bundler",
       "colour": "e5e5e5"
     },
-    "bundler-svelte": {
-      "name": "bundler: svelte 🗳️",
-      "description": "Issues related to svelte bundler",
-      "colour": "e5e5e5"
-    },
     "bundler-webpack": {
       "name": "bundler: webpack 📦",
       "description": "Issue is related to webpack bundler",
@@ -195,6 +190,11 @@
       "description": "Issue related to vanilla css tags",
       "colour": "00e5e5"
     },
+    "platform-svelte": {
+      "name": "platform: svelte 🛠️",
+      "description": "Issue related to svelte",
+      "colour": "00e5e5"
+    },
     "priority-critical": {
       "name": "priority: critical  ☢️",
       "description": "Issue is a critical bug that affects most of the users",
@@ -280,6 +280,97 @@
         {
           "type": "descriptionMatches",
           "pattern": "/rollup/i"
+        }
+      ]
+    },
+    "bundler-webpack": {
+      "requires": 1,
+      "conditions": [
+        {
+          "type": "titleMatches",
+          "pattern": "/webpack/i"
+        },
+        {
+          "type": "descriptionMatches",
+          "pattern": "/webpack/i"
+        }
+      ]
+    },
+    "bundler-parcel": {
+      "requires": 1,
+      "conditions": [
+        {
+          "type": "titleMatches",
+          "pattern": "/parcel/i"
+        },
+        {
+          "type": "descriptionMatches",
+          "pattern": "/parcel/i"
+        }
+      ]
+    },
+    "platform-svelte": {
+      "requires": 1,
+      "conditions": [
+        {
+          "type": "titleMatches",
+          "pattern": "/svelte/i"
+        },
+        {
+          "type": "descriptionMatches",
+          "pattern": "/svelte/i"
+        }
+      ]
+    },
+    "platform-next.js": {
+      "requires": 1,
+      "conditions": [
+        {
+          "type": "titleMatches",
+          "pattern": "/next(\\.){0,1}js/i"
+        },
+        {
+          "type": "descriptionMatches",
+          "pattern": "/next(\\.){0,1}js/i"
+        }
+      ]
+    },
+    "platform-ssr": {
+      "requires": 1,
+      "conditions": [
+        {
+          "type": "titleMatches",
+          "pattern": "/(ssr)|(server)/i"
+        },
+        {
+          "type": "descriptionMatches",
+          "pattern": "/(ssr)|(server)/i"
+        }
+      ]
+    },
+    "platform-vue": {
+      "requires": 1,
+      "conditions": [
+        {
+          "type": "titleMatches",
+          "pattern": "/vue/i"
+        },
+        {
+          "type": "descriptionMatches",
+          "pattern": "/vue/i"
+        }
+      ]
+    },
+    "cat-performance": {
+      "requires": 1,
+      "conditions": [
+        {
+          "type": "titleMatches",
+          "pattern": "/(slow)|(build[\\s\\S]*time)|(time[\\s\\S]*build)(performance)/i"
+        },
+        {
+          "type": "descriptionMatches",
+          "pattern": "/(slow)|(build[\\s\\S]*time)|(time[\\s\\S]*build)(performance)/i"
         }
       ]
     }
