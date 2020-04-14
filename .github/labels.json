@@ -257,19 +257,6 @@
     }
   },
   "issue": {
-    "cat-monorepo": {
-      "requires": 1,
-      "conditions": [
-        {
-          "type": "titleMatches",
-          "pattern": "/monorepo/i"
-        },
-        {
-          "type": "descriptionMatches",
-          "pattern": "/monorepo/i"
-        }
-      ]
-    },
     "bundler-rollup": {
       "requires": 1,
       "conditions": [
@@ -348,16 +335,16 @@
         }
       ]
     },
-    "platform-vue": {
+    "platform-electron": {
       "requires": 1,
       "conditions": [
         {
           "type": "titleMatches",
-          "pattern": "/vue/i"
+          "pattern": "/electron/i"
         },
         {
           "type": "descriptionMatches",
-          "pattern": "/vue/i"
+          "pattern": "/electron/i"
         }
       ]
     },
@@ -371,6 +358,62 @@
         {
           "type": "descriptionMatches",
           "pattern": "/(slow)|(build[\\s\\S]*time)|(time[\\s\\S]*build)(performance)/i"
+        }
+      ]
+    },
+    "cat-testing": {
+      "requires": 1,
+      "conditions": [
+        {
+          "type": "titleMatches",
+          "pattern": "/(test)|(jest)/i"
+        }
+      ]
+    },
+    "cat-monorepo": {
+      "requires": 1,
+      "conditions": [
+        {
+          "type": "titleMatches",
+          "pattern": "/(monorepo)|(workspace)|(lerna)/i"
+        },
+        {
+          "type": "descriptionMatches",
+          "pattern": "/(monorepo)|(workspace)|(lerna)/i"
+        }
+      ]
+    },
+    "cat-modules-aliasing": {
+      "requires": 1,
+      "conditions": [
+        {
+          "type": "titleMatches",
+          "pattern": "/(alias)|(namemapper)/i"
+        },
+        {
+          "type": "descriptionMatches",
+          "pattern": "/(alias)|(namemapper)/i"
+        }
+      ]
+    },
+    "cat-typings": {
+      "requires": 1,
+      "conditions": [
+        {
+          "type": "titleMatches",
+          "pattern": "/type/i"
+        },
+        {
+          "type": "titleMatches",
+          "pattern": "/TS/"
+        },
+        {
+          "type": "descriptionMatches",
+          "pattern": "/type/i"
+        },
+        {
+          "type": "descriptionMatches",
+          "pattern": "/TS/"
         }
       ]
     }
